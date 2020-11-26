@@ -12,11 +12,13 @@
       "48": "icon48.png",
       "128": "icon128.png"
     },
-    "background" : {
-        "scripts" : ["background.js"],
-        "persistent" : false
-    },
-    "permissions": [
-      "<all_urls>"
-    ]
+    "content_scripts": [
+      {
+        "matches": [
+          "*://*.youtube.com/*",
+          "*://youtube.com/*"
+        ],
+        "js": ["jquery-3.4.1.min.js", "inject.js"]
+      }
+    ]  
 }
