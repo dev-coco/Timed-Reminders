@@ -1,2 +1,16 @@
 # Timed-Reminders
-Timed Reminders. Simulate real YouTube user operations to watch videos. 定时提醒，语音播报。模拟YouTube真实用户操作观看视频。
+Timed Reminders. Simulate real YouTube users watching videos.
+
+定时提醒，语音播报。模拟YouTube真实用户观看视频。
+
+# 功能介绍
+点击开始按钮设置一个时间，时间结束后会语音播报「计时结束，请返回查看」。
+
+以下时间按照设置的时间而定，而不是视频的时长。
+- 如果小于20分钟不会有任何操作
+- 大于20分钟小于30分钟
+  - 中途暂停2-5分钟，快进或后退，两种方式自动选择一种。
+- 大于30分钟
+  - 中途会暂停2-5分钟然后快进或者后退。
+
+
