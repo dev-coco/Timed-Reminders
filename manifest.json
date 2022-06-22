@@ -3,12 +3,16 @@
   "name": "Timed Reminders",
   "description": "定时提醒。",
   "author": "dev-coco",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "browser_action": {
     "default_icon": "icon128.png"
   },
   "icons": {
     "128": "icon128.png"
+  },
+  "background" : {
+    "scripts" : ["background.js"],
+    "persistent" : true
   },
   "content_scripts": [
     {
@@ -17,5 +21,8 @@
       ],
       "js": ["jquery-3.4.1.min.js", "inject.js"]
     }
-  ]  
+  ],
+  "externally_connectable": {
+    "matches": ["*://*.youtube.com/*"]
+  }
 }
